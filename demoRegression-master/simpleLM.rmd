@@ -53,3 +53,12 @@ summary.lm(simp)
 ```
 Compared to the first model of NECK and LENGTH, there is now a smaller residual and adjusted R-square which means both of the models are about the same and not as effective as comparing nack to the other model CHEST and LENGTH. 
 
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+Afterall this model above seems to be much better than all the previous models becuase of the residual standard error is smaller and because the adjusted R-square is higher this time. 
+
